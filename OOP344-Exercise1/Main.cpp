@@ -2,8 +2,7 @@
 #include "Employee.h"
 #include <iostream>
 
-int main()
-   {
+int main(){
    Manager man;
 
    Employee dan(1, "Dan");
@@ -11,10 +10,10 @@ int main()
    Employee alex(3, "Alex");
    Employee sarah(4, "Sarah");
 
-   dan.setBoss(man);
-   mike.setBoss(man);
-   alex.setBoss(man);
-   sarah.setBoss(man);
+   dan.setBoss(&man);				//+& 
+   mike.setBoss(&man);
+   alex.setBoss(&man);
+   sarah.setBoss(&man);
 
    dan.work(2);
    mike.work(2);

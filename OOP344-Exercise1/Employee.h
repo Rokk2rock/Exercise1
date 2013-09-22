@@ -1,7 +1,8 @@
+#ifndef __FS__
+#define __FS__
 class Manager;
 
-class Employee
-   {
+class Employee{
    private:
       int ID;
       char* name;
@@ -18,3 +19,5 @@ class Employee
       int getID();
       char* getName();
    };
+
+#endif
